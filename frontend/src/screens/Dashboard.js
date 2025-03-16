@@ -95,7 +95,7 @@ const Dashboard = () => {
               </tr>
             </thead>
             <tbody>
-              {products &&
+              {products?.products &&
                 products?.products.map((product) => (
                   <tr key={product._id} className="hover:bg-gray-100">
                     <td className="py-2 px-4 border">{product.name}</td>
